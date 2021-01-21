@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">  
+<title>jQuery Exercise 1</title>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>  
+    <link rel="stylesheet" href="css/style.css">
+        <body>
+<div id="container">
+
+  <div id="header">
+    Mason Myeoungryeul Yang
+  </div>
+  <div id="menu">
+    
+    <a href="#" id="menu_about">
+      About
+    </a>
+    <a href="#" id="menu_clients">
+      Clients
+    </a>    
+    <a href="#" id="menu_contact">
+      Contact
+    </a>
+    
+  </div>
+  <div id="content">
+    
+    <div class="text" id="content_about">
+      My name is Mason Myeoungryeul Yang. I am an interaction designer who based on South Korea and Canada. 
+    </div>
+    
+    <div class="text" id="content_clients">
+      Coming up soon
+    </div>
+    
+    <div class="text" id="content_contact">
+      <p>Telephone - 647 861 0729
+      <br/>Email - <a href="mailto:woneuroyendollar@gmail.com">woneuroyendollar@gmail.com</a>
+      <br/>YouTube - <a href="https://youtu.be/HMdJJF1lCvA">Gatsby the Awesome</a>
+      </p>
+    </div>    
+    
+  </div>  
+  
+</div>
+<script>
+  $("body").css("background-color", "skyblue"); 
+
+
+$(document).on("click", "#menu_about", function(){
+
+    $("#content_about").slideDown("slow");
+  $("#content_about").siblings().slideUp("fast");
+
+});
+
+$(document).on("click", "#menu_clients", function(){
+
+    $("#content_clients").slideDown("slow");
+  $("#content_clients").siblings().slideUp("fast");
+
+});
+
+$(document).on("click", "#menu_contact", function(){
+
+    $("#content_contact").slideDown("slow");
+  $("#content_contact").siblings().slideUp("fast");
+
+});
+
+$("#menu_about").click();
+</script>
+        </body>
+</html>

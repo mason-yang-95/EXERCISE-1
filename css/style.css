@@ -1,0 +1,40 @@
+#container
+{
+  width:480px;
+  border: 1px solid #ccc;
+  margin-left:auto;
+  margin-right:auto;
+  font-family:sans-serif;
+}
+
+#header
+{
+  background-color:cadetblue;
+  color: white;
+  padding:5px;
+  font-weight:bold;
+}
+
+#menu
+{
+  padding:5px;
+  border-bottom:1px solid #ccc;
+  background-color:royalblue
+}
+
+#menu a
+{
+  color:white;
+  text-decoration:none;
+  margin-right:5px;
+}
+
+.text
+{
+  background-color:#eee;
+  font-size:15px;
+  padding:5px;
+  display:none;
+}
+
+
